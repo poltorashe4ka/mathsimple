@@ -1,0 +1,450 @@
+#header.header-scrolled #logo img{
+    filter: invert(1);
+}
+.hidden{
+    display: none;
+}
+.progress-table-wrap {
+    overflow: hidden;
+}
+.primer-quotes{
+    display: flex;
+    font-size: 2em;
+    justify-content: space-around;
+}
+.primer-quotes{
+    font-size: 4em;
+
+}
+.buttoms-bloсk{
+    justify-content: space-between;
+}
+.answer-field{
+    width: 47%;
+    cursor: text;
+    padding: 17px 10px;
+    border: 1px solid #4cd3e3;
+    height: 100%;
+    min-height: 62px;
+}
+.primer-show{
+    margin-top: 23px;
+    color: #4cd3e3;
+}
+.keys span{
+    margin-bottom: 10px;
+    padding: 0 70px;
+}
+.table_view{
+    font-size: 2em;
+    color: #4cd3e3;
+    min-width: 300px;
+}
+.table_view_tr{
+    display: flex;
+    justify-content: space-around;
+}
+//.tablo_msg{
+//    height: 31px;
+//    text-align: center;
+//    margin-top: 20px;
+//    font-size: 2em;
+//}
+.shop_link i{
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.shop_link:hover i{
+    color: #39cfca;
+}
+.shop_block h4{
+    min-height: 74px;
+}
+.screen{
+    overflow: hidden;
+}
+.btn-pay{
+    width: 300px;
+    border-radius: 0;
+    height: 42px;
+}
+#clock{
+    font-size: 29px;
+    font-weight: bold;
+    color: #000000;
+}
+.clock_button .keys{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.clock_button .genric-btn{
+
+    min-width: 47px;
+    line-height: 30px;
+    padding: 0 13px;
+    font-weight: 500;
+}
+.clock_button .single-post-area .quotes{
+    padding: 30px 15px;
+}
+.clock_button .time_halve{
+    margin-top: -49px;
+    position: absolute;
+    right: 50px;
+    color: #ffffff;
+    background: #4fc7c9;
+    padding: 5px 10px;
+}
+
+.gcell {
+    width: 140px;
+    float: left;
+    font-size: 1em;
+    padding-bottom: 1.1em;
+}
+.single-post-area .quotes{
+    min-height: 86px;
+}
+.text-result{
+    min-height: 30px;
+}
+
+.courses-list a{
+    text-align: center;
+}
+.courses-list i{
+    margin-right: 1px;
+}
+.primary-radio{
+    width: 20px;
+    height: 20px;
+    border-radius: 21px;
+    background: #ffffff;
+}
+.confirm-checkbox{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background: #ffffff;
+}
+.podskazka{
+    text-align: center;
+    font-size: 2.4em;
+    color: #f37691;
+    padding: 15px;
+}
+.mera .answer-field{
+    width: 25%;
+}
+.mera .mera_otvet{
+    color: #4cd3e3;
+    margin-top: 23px;
+}
+.confirm-switch{
+    background: #ffffff;
+}
+.footer-area .single-footer-widget ul li{
+    margin-bottom: 6px;
+}
+.unordered-list li.black:before{
+    background: #39cfca;
+}
+.form-horizontal .form-control:focus{
+    box-shadow: none;
+}
+/* Контейнер подсказок */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* Если вы хотите, чтобы точки под перемещаемым текстом */
+}
+
+/* Текст подсказки */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Расположите текст подсказки */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Исчезают в подсказке */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Подсказка стрелка */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Отображение текста подсказки при наведении курсора мыши на контейнер подсказки */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.widget-wrap .lnr.lnr-chevron-down{
+    display: none;
+}
+.feature-item h4{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.feature-item{
+    padding: 30px 30px;
+}
+.shop_block .genric-btn{
+    line-height: 31px;
+    width: 100%;
+}
+.shop_block p{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.test_arrea h4{
+    font-size: 32px;
+}
+
+.test_arrea li{
+    text-align: left;
+    line-height: 1.9em;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.test_arrea li:hover{
+    color: #39cfca;
+}
+.test_arrea li.active{
+    color: #39cfca;
+}
+.result_arrea{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.test_arrea .primary-btn{
+    border-radius: 0px;
+}
+@media (max-width: 991px){
+
+    .mera .primer-quotes{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .primer-show{
+        white-space: nowrap;
+    }
+    .result_arrea{
+        width: 90%;
+    }
+    .test_arrea .owl-thumbs{
+        flex-wrap: wrap;
+    }
+    .test_arrea .owl-thumbs .owl-thumb-item{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .test_arrea li {
+        text-align: left;
+        line-height: 26px;
+        font-weight: normal;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .shop_block h1{
+        font-size: 18px;
+    }
+    .shop_block p{
+        text-align: left;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .shop_block .feature-item{
+        padding: 20px;
+    }
+    .shop_block .feature-item h4{
+        margin-top: 1px;
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        min-height: 26px;
+    }
+    .shop_block .genric-btn{
+        line-height: 27px;
+        width: 100%;
+    }
+    .widget-wrap .lnr.lnr-chevron-down{
+        display: block;
+        float: right;
+        margin-right: 20px;
+    }
+    .popular-post-list{
+        display: none;
+    }
+    .widget-wrap .popular-post-widget .popular-title{
+        padding: 5px 0px;
+        font-size: 14px;
+    }
+    .popular-post-list .switch-wrap{
+        margin-bottom: 5px;
+    }
+    .switch-wrap .genric-btn{
+        line-height: 9px;
+        padding: 0 30px;
+        font-size: 14px;
+        height: 37px;
+    }
+    .switch-wrap .genric-btn.success-border{
+        line-height: 37px;
+    }
+    .widget-wrap {
+        margin-top: 0px;
+        padding-top: 0px;
+        margin-bottom: 10px;
+    }
+    .widget-wrap .single-sidebar-widget{
+        margin: 15px 15px;
+        margin-top: 25px;
+    }
+    .widget-wrap .single-sidebar-widget:last-child{
+        padding-bottom: 0;
+    }
+    .order_1{
+        order: 1;
+    }
+    .flip-clock-wrapper ul{
+margin: 3px;
+        width: 40px;
+        height: 60px;
+        font-size: 60px;
+        line-height: 67px;
+        border-radius: 8px;
+    }
+    .flip-clock-divider{
+        height: 70px;
+    }
+    .flip-clock-wrapper ul li{
+        line-height: 67px;
+    }
+    .flip-clock-dot{
+        width: 5px;
+        height: 5px;
+    }
+    .flip-clock-dot.bottom{
+        bottom: 27px;
+    }
+    .margin_bottom{
+        margin-bottom: 10px;
+    }
+    .home_form .control-label{
+        width: 135px;
+    }
+    .tarifs{
+        padding-top: 15px;
+    }
+    .tarifs .feature-item{
+        padding:1px 15px 20px 15px;
+    }
+    .tarifs .primary{
+        width: 100%;
+    }
+    .tarifs .section-title p{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: -20px;
+    }
+    .tarifs .section-title h1{
+        font-size: 16px;
+    }
+    #myCanvas{
+width: 250px !important;
+        height: 250px !important;
+    }
+    .clock_button .time_halve{
+        margin-top: -41px;
+        right: 15px;
+        padding: 0px 26px;
+        font-size: 14px;
+    }
+    .single-post-area .quotes{
+        margin-top: 5px;
+        padding: 11px 10px;
+
+    }
+    .single-post-area .quotes p{
+        margin-bottom: 0px;
+    }
+    .mera .mera_otvet{
+        margin-top: 6px;
+    }
+    .mera .answer-field{
+        width: 28%;
+    }
+    .mera .podskazka{
+        font-size: 1.4em;
+    }
+
+    .mera .table_view_td{
+        width: 100%;
+        font-size: 22px;
+    }
+    h2{
+        text-align: center;
+        font-size: 22px;
+    }
+    p.footer_sogl{
+        padding: 15px;
+        text-align: center;
+    }
+    .clock_button .genric-btn {
+        line-height: 23px;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 3px;
+    }
+    .keys span{
+        padding: 0 30px;
+        line-height: 25px;
+    }
+    .primer-show{
+        margin-top: 7px;
+    }
+    .primer-quotes {
+        font-size: 2em;
+    }
+    .table_view{
+        font-size: 2em;
+    }
+    .table_view_td.primer{
+        width: 80%;
+    }
+    .table_view_td{
+        width: 40%;
+    }
+    .answer-field{
+        padding: 6px 10px;
+        min-height: 42px;
+    }
+}
+@media (max-width: 1500px) {
+.big_reclama{
+    display: none;
+}
+}

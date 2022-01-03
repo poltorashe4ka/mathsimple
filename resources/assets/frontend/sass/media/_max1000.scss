@@ -1,0 +1,50 @@
+@media (max-width: 1000px) {
+    #filter{
+        margin-right: 0px;
+    }
+    .calculate_blok{
+        flex-wrap: wrap;
+        #filter, .make{
+            width: 100%;
+        }
+        &.mult_table{
+            #filter, .make{
+                min-height: 249px;
+            }
+            #middle_box{
+                min-height: 326px;
+            }
+            .tablo_primer{
+                min-height: 69px;
+            }
+        }
+    }
+    .logo_text{
+        display: none;
+    }
+    .make #middle_box{
+        width: 100%;
+    }
+    .print_form{
+        margin-top: 10px;
+    }
+    a.card-for-main{
+        height: 190px;
+        .card-for-main-img{
+            display: flex;
+            width: 114px;
+            img{
+                height: auto;
+                width: 100%;
+            }
+        }
+        .card-for-main-description {
+            padding: 0 1%;
+            flex-wrap: wrap;
+            .card-for-main-button{
+                margin: auto;
+                width: 100%;
+            }
+        }
+    }
+}

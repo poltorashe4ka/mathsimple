@@ -1,0 +1,43 @@
+@media (max-width: 800px) {
+    .card-for-main-img{
+        height: auto;
+        margin: auto;
+        img{
+            height: 100px;
+        }
+    }
+    #menu a{
+        text-transform: capitalize;
+        padding: 0.25rem 1rem;
+    }
+    .nav-label{
+        font-size: 14px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 42px;
+        padding-right: 7px;
+    }
+    .tab-content{
+        position: absolute;
+        top: 88px;
+        width: 100%;
+        left: 0%;
+        height: 100%;
+        opacity: 0;
+    }
+    .tabs{
+        height: auto;
+        display: flex;
+    }
+    .information{
+        top: 0px;
+    }
+    #top-move, #bottom-move, #side-move, .formlabel{
+        display: none;
+    }
+    .formcontainers{
+        .btn-green{
+            margin-left: 16%;
+        }
+    }
+}

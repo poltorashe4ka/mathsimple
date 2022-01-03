@@ -1,0 +1,442 @@
+
+.experiment {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    height: 399px;
+    width: 100%;
+    min-height: 240px;
+    clear: both;
+    margin: auto;
+    padding: 3% 3%;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    overflow: hidden;
+}
+
+.tabs {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    height: 400px;
+}
+
+.tabs input[type=radio] {
+    display: none;
+}
+
+.nav-label {
+    transition: 0.3s;
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 29px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-right: 1px solid #029A1C;
+    border-bottom: 1px solid #029A1C;
+    width: 100%;
+}
+.nav-label:hover {
+    background: #e2e8db;
+}
+
+#nobottom {
+    border-bottom: none;
+}
+
+.tab-content {
+    position: absolute;
+    top: 0px;
+    width: 463px;
+    left: 188px;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+}
+
+#tab-content2, #tab-content3, #tab-content4 {
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+}
+
+.tabs [id^=tab]:checked + .nav-label {
+    background: #2fb246b5;
+    color: white;
+}
+
+#tab1:checked ~ #tab-content1,
+#tab2:checked ~ #tab-content2,
+#tab3:checked ~ #tab-content3, #tab4:checked ~ #tab-content4 {
+    animation: move 0.5s ease-out forwards;
+    z-index: 50;
+}
+@keyframes move {
+    0% {
+        transform: translate(-28px, 0px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+span {
+    animation: nav 0.5s ease-out forwards;
+    opacity: 1;
+}
+@keyframes nav {
+    0% {
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.only {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    left: 15px;
+    background: #029A1C;
+    border-top-right-radius: 75%;
+    border-bottom-left-radius: 75%;
+    z-index: 1;
+}
+.only:after {
+    content: "";
+    position: absolute;
+    background: #2FB246;
+    height: 0px;
+    width: 0px;
+    border-top-right-radius: 75%;
+    border-bottom-left-radius: 75%;
+    transform: rotate(90deg);
+    left: 11px;
+    top: 0;
+    z-index: -1;
+}
+.only:before {
+    content: "";
+    position: absolute;
+    background: #72F689;
+    height: 0px;
+    width: 0px;
+    border-top-right-radius: 75%;
+    border-bottom-left-radius: 75%;
+    transform: rotate(45deg);
+    left: 8px;
+    top: -3px;
+    z-index: -1;
+}
+
+.tabs [id^=tab]:checked + label > .only {
+    animation: run 0.4s ease-in forwards;
+}
+@keyframes run {
+    100% {
+        height: 15px;
+        width: 15px;
+    }
+}
+
+.tabs [id^=tab]:checked + label > .only:after {
+    animation: run2 0.4s ease-in forwards;
+}
+@keyframes run2 {
+    100% {
+        height: 12px;
+        width: 12px;
+    }
+}
+
+.tabs [id^=tab]:checked + label > .only:before {
+    animation: run3 0.4s ease-in forwards;
+}
+@keyframes run3 {
+    100% {
+        height: 9px;
+        width: 9px;
+    }
+}
+
+#lastone {
+    position: absolute;
+    left: 10px !important;
+}
+
+.name {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    height: 30%;
+}
+
+.profile {
+    position: relative;
+    height: 75px;
+    width: 75px;
+    top: -15px;
+    border-radius: 100%;
+}
+
+.information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+}
+
+.user {
+    margin-left: 15px;
+}
+
+.account {
+    position: relative;
+    color: #b3b3b3;
+    top: -34px;
+}
+
+.tree {
+    position: absolute;
+    height: 17px;
+    width: 8px;
+    background: #826953;
+    left: 55px;
+    transform: scale(0.01);
+}
+.tree .leaf {
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 21px solid #029A1C;
+    height: 0px;
+    top: -15px;
+    right: -12px;
+    width: 0px;
+}
+.tree .leaf:after {
+    content: "";
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 21px solid #2FB246;
+    height: 0px;
+    top: -9px;
+    right: -15px;
+    width: 0px;
+}
+.tree .leaf:before {
+    content: "";
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 21px solid #41F661;
+    height: 0px;
+    top: -18px;
+    right: -15px;
+    width: 0px;
+    z-index: 10;
+}
+
+#tab1:checked ~ #tab-content1 > .name > .tree {
+    animation: big 0.2s ease-in forwards;
+    animation-delay: 0.3s;
+}
+@keyframes big {
+    100% {
+        transform: scale(1);
+    }
+}
+
+.rightside {
+    left: 391px;
+    animation-delay: 0.5s !important;
+}
+
+.formcontainers {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+
+.formfields {
+    position: relative;
+    width: 100%;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#texter {
+    position: relative;
+    z-index: 90;
+    width: 90%;
+    height: 25px;
+}
+
+.formlabel {
+    position: absolute;
+    display: inline;
+    top: 0px;
+    z-index: 120;
+    left: 25px;
+    font-size: 14px;
+    transition: 0.5s;
+    color: gray;
+    width: 100px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    opacity: 0;
+    z-index: -100;
+}
+
+#texter:focus {
+    outline: none;
+}
+
+#texter::-webkit-input-placeholder {
+    font-size: 14px;
+    padding-left: 8px;
+}
+
+#texter:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+#texter:valid ~ label, #texter:focus ~ label {
+    color: white;
+    transform: translateX(324px);
+    background: #029A1C;
+    opacity: 1;
+    z-index: 100;
+}
+
+#texter:active ~ label {
+    color: white;
+    transform: translateX(335px);
+    background: #649173;
+}
+
+#texter {
+    font-size: 18px;
+    padding-left: 2px;
+}
+
+#texter:focus ~ #top-move {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    right: 102px;
+    background: #649173;
+    z-index: 100;
+    animation: border 0.5s ease forwards;
+}
+@keyframes border {
+    100% {
+        width: 340px;
+        height: 2px;
+        opacity: 1;
+    }
+}
+
+#texter:focus ~ #side-move {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    left: 20px;
+    background: #649173;
+    z-index: 100;
+    animation: border2 0.3s ease forwards;
+    animation-delay: 0.3s;
+}
+@keyframes border2 {
+    100% {
+        width: 2px;
+        height: 32px;
+        opacity: 1;
+    }
+}
+
+#texter:focus ~ #bottom-move {
+    position: absolute;
+    opacity: 0;
+    top: 30px;
+    width: 1px;
+    border-radius: 8px;
+    height: 1px;
+    right: 102px;
+    background: #649173;
+    z-index: 100;
+    animation: border 0.5s ease forwards;
+}
+@keyframes border {
+    100% {
+        width: 340px;
+        height: 2px;
+        opacity: 1;
+    }
+}
+
+.save {
+    width: 165px;
+    height: 52px;
+    background: #649173;
+    border-bottom: 7px solid #D8D3A3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.mountainbutton {
+    position: absolute;
+    bottom: 40px;
+    transition: 0.8s;
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(#826A54, tan);
+    cursor: pointer;
+    clip-path: polygon(0% 100%, 14px 70%, 54px 80%, 100px 71%, 123px 74%, 140px 74%, 190px 100%);
+    transform: scale(0.8);
+    left: 25%;
+    top: -5px;
+    border-bottom: 9px solid #80A88D;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.mountainbutton:hover {
+    clip-path: polygon(0% 100%, 14px 90%, 54px 70%, 100px 81%, 123px 74%, 140px 67%, 190px 100%);
+    color: white;
+}
+.mountainbutton p {
+    position: relative;
+    margin-left: 63px;
+    font-size: 22px;
+    top: 4px;
+    font-weight: 900;
+}

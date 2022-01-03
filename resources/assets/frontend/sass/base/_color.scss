@@ -1,0 +1,31 @@
+$colors: (
+    "default": #fff,
+        "primary_1": #00A480,
+    "primary_2": #1F7B67,
+    "primary_3": #006B53,
+        "primary4": #34D2AF,
+    "primary_5": #5ED2B8,
+    "second_1": #0F4FA8,
+    "second_2": #284C7E,
+    "second_3": #05316D,
+    "second_4": #4380D3,
+    "second_5": #6996D3,
+    "thied_1": #3BDA00,
+    "thied_2": #4AA329,
+    "thied_3": #268E00,
+    "thied_4": #6BEC3B,
+    "thied_5": #8EEC6A,
+    //"thied_5_rgba": rgba(142, 236, 106, 1),
+    "black": #000,
+    'red': #EB5757,
+    'base-color':#3BDA00,
+    'base-color-border':#4AA329,
+    'second-color':#05316D,
+    'second-color-border':#272727,
+    'third-color':#fff,
+) !default;
+
+
+@function color($key: "default", $alt: #fefefe) {
+    @return if(map-has-key($colors, $key), map-get($colors, $key), $alt);
+}
