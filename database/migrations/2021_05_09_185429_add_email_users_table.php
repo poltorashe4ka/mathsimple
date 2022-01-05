@@ -13,9 +13,9 @@ class AddEmailUsersTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->text('email')->nullable();
-        });
+//        Schema::table('users', function (Blueprint $table) {
+//            $table->text('email')->nullable();
+//        });
     }
 
     /**
@@ -25,8 +25,8 @@ class AddEmailUsersTable extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('email');
-        });
+//        Schema::table('users', function (Blueprint $table) {
+//            $table->dropColumn('email');
+//        });
     }
 }
